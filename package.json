@@ -1,6 +1,6 @@
 {
     "name": "com.eric.pointcloudcore",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "displayName": "Point Cloud Core",
     "description": "PointCloud transmission core",
     "unity": "2021.1",
