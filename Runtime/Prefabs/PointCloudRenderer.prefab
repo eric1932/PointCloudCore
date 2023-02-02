@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4694037084306529406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4694037084306529402}
+  - component: {fileID: 4694037084306529407}
+  - component: {fileID: 4694037084306529400}
+  - component: {fileID: 4694037084306529401}
+  - component: {fileID: 1917270320074770794}
+  m_Layer: 0
+  m_Name: PointCloudRenderer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4694037084306529402
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4694037084306529406}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4694037084306529407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4694037084306529406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7493c9507e5b99442b6311a3a5b01858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  multiID: -1
+--- !u!114 &4694037084306529400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4694037084306529406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30d8249462b793c43be531ff4563328f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxChunkSize: 65535
+  pointSize: 0.005
+  pointCloudElem: {fileID: 1002025039999346, guid: 455c5975eea7a16439cfeea7ce943e1f, type: 3}
+  pointCloudMaterial: {fileID: 2100000, guid: 60d0df8ac908d2445a5311e3e43a5283, type: 2}
+--- !u!114 &4694037084306529401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4694037084306529406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e585e4e0c76c043a33cc89f9de3cba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyboardDone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4694037084306529407}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: Connect
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  titleText: Server IP address
+--- !u!114 &1917270320074770794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4694037084306529406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28cd537aeca3742689acf909eab22d2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

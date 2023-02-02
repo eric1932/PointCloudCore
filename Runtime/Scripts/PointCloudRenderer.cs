@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections.Generic;
 
 public class PointCloudRenderer : MonoBehaviour
 {
     public int maxChunkSize = 65535;
+    // public int maxNumPoints = 50000;
     public float pointSize = 0.005f;
     public GameObject pointCloudElem;
     public Material pointCloudMaterial;
@@ -44,10 +45,13 @@ public class PointCloudRenderer : MonoBehaviour
             nChunks = 1 + nPoints / maxChunkSize;
         }
         
+        // makes elems has Count=nChunks
         if (elems.Count < nChunks)
             AddElems(nChunks - elems.Count);
         if (elems.Count > nChunks)
             RemoveElems(elems.Count - nChunks);
+        //Debug.Assert(elems.Count == nChunks);
+        //Debug.Log(nChunks);
 
         int offset = 0;
         for (int i = 0; i < nChunks; i++)
@@ -58,7 +62,10 @@ public class PointCloudRenderer : MonoBehaviour
             renderer.UpdateMesh(arrVertices, arrColors, nPointsToRender, offset);
 
             offset += nPointsToRender;
+
+            // if (offset >= maxNumPoints) break;
         }
+        //Debug.Log(offset);
     }
 
     void AddElems(int nElems)
@@ -67,8 +74,13 @@ public class PointCloudRenderer : MonoBehaviour
         {
             GameObject newElem = GameObject.Instantiate(pointCloudElem);
             newElem.transform.parent = transform;
+// #if UNITY_EDITOR
             newElem.transform.localPosition = new Vector3(0.0f, 0.0f, 0.0f);
-            newElem.transform.localRotation = Quaternion.identity;
+// #else
+//             newElem.transform.localPosition = new Vector3(0.0f, 0.0f, 0.2f);
+// #endif
+            //newElem.transform.localRotation = Quaternion.identity;
+            newElem.transform.localRotation = Quaternion.Euler(0, 180, 180);  // Fix rotation
             newElem.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
             elems.Add(newElem);

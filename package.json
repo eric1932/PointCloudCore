@@ -1,8 +1,8 @@
 {
     "name": "com.eric.pointcloudcore",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "displayName": "Point Cloud Core",
-    "description": "This is an example package",
+    "description": "PointCloud transmission core",
     "unity": "2021.1",
     "author": {
         "name": "Eric"
