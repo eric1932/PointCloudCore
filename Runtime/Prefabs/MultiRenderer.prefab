@@ -41,10 +41,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7644641581943592752}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8276072ee92ba14cb98f9c84038f325, type: 3}
+  m_Script: {fileID: 11500000, guid: 157fd282f7620447ebffd8c72f15444b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxChunkSize: 65535
   pointSize: 0.005
-  pointCloudElem: {fileID: 1002025039999346, guid: 455c5975eea7a16439cfeea7ce943e1f, type: 3}
-  pointCloudMaterial: {fileID: 2100000, guid: 60d0df8ac908d2445a5311e3e43a5283, type: 2}
+  pointCloudElem: {fileID: 1002025039999346, guid: 0a5a0619dc4a94233ad9ca59392b4e0a, type: 3}
+  pointCloudMaterial: {fileID: 2100000, guid: 8931182d130f249b1b44c4357f56266f, type: 2}
