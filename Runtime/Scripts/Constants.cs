@@ -16,7 +16,7 @@ public class Constants : MonoBehaviour
      */
     public static readonly string localhost = "127.0.0.1";
     public static readonly string VultrSG_HM0001 = "139.180.141.82";
-    public static readonly string LANTUF = "192.168.50.222";
+    public static readonly string LANTUF = "192.168.50.246";
     public static readonly string LANMBP14 = "192.168.50.33";
 
     public static readonly string APIHostname = "http://139.180.141.82:8000";
